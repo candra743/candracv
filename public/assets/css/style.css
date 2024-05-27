@@ -1,0 +1,433 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 56px;
+    height: 100%;
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 30px; /* Add spacing between nav items */
+    font-size: 18px; /* Set font size */
+    font-weight: 500; /* Set font weight */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #3c59ff;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px; /* Jarak antar item navbar */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white;
+    margin-left: 5px; 
+    font-size: 35px; 
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Home */
+.home-section {
+    background-color: #021631; /* Background color for the home section */
+    padding: 60px 0; /* Padding for top and bottom */
+    height: 100vh; /* Menyesuaikan tinggi bagian Home agar penuh */
+    color: white;
+}
+
+.home-section h1 {
+    color: white; /* Color for "Hi, Saya" */
+    font-size: 2rem; /* Font size for "Hi, Saya" */
+    font-weight: bold; /* Font weight for "Hi, Saya" */
+    margin-bottom: 20px; /* Add some bottom margin to the heading */
+}
+
+.home-section h2 {
+    color: #3c59ff; /* Color for "Candra Kusuma Hidayat" */
+    font-size: 2.5rem; /* Larger font size for the name */
+    font-weight: bold; /* Bold font weight for the name */
+    margin-bottom: 20px; /* Add some bottom margin to the heading */
+}
+
+.home-section p {
+    font-size: 1.25rem; /* Smaller font size for the description */
+    color: white; /* Color for the description */
+    font-weight: normal; /* Font weight for the description */
+    margin-bottom: 20px; /* Add some bottom margin to the paragraph */
+}
+
+.home-section .social-icons a {
+    color: white; /* Warna ikon default menjadi putih */
+    margin-right: 15px; /* Spacing antara ikon */
+    transition: color 0.3s ease; /* Menambahkan transisi yang halus */
+}
+
+.home-section .social-icons a:hover {
+    color: #3c59ff; /* Warna ikon saat di-hover menjadi #3c59ff */
+}
+
+.home-section .btn {
+    background-color: #3c59ff; /* Background color for the button */
+    border-color: #3c59ff; /* Border color for the button */
+    color: white; /* Text color for the button */
+}
+
+.btn-about-me {
+    border-radius: 50px; /* Membuat tombol lonjong */
+    padding: 10px 20px; /* Padding untuk tombol */   
+}
+
+.text-white.ms-3 {
+    margin-left: 15px; /* Mengatur margin kiri untuk teks */
+}
+
+@media (max-width: 780px) {
+    .home-section {
+        padding-top: 100px; /* Memberikan jarak antara gambar dan navbar */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        margin-left: 0; /* Reset left margin for navbar brand */
+    }
+
+    .navbar-toggler {
+        margin-right: 5px; /* Add some margin between navbar toggler and nav items */
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 0; /* Reset right margin for nav items */
+        margin-bottom: 5px; /* Add some margin bottom for nav items */
+    }
+
+    .home-section .col-md-6.text-white {
+        margin-top: 1rem; /* Add margin top on smaller screens */
+        text-align: center; /* Center align text on smaller screens */
+    }
+    .home-section .col-md-6.text-center {
+        margin-top: 1rem; /* Menambahkan margin top untuk menjaga jarak dengan navbar */
+    }
+
+    .home-section .row {
+        flex-direction: column-reverse; /* Mengubah arah flex menjadi vertikal dan membalikkan urutan elemen */
+    }
+
+    .home-section .col-md-6.text-center img {
+        max-width: 100px; /* Mengatur ukuran gambar */
+        display: block; /* Memberikan display block agar gambar dapat diatur secara horizontal */
+        margin: 0 auto; /* Mengatur margin agar gambar berada di tengah */
+        margin-bottom: 1rem; /* Menambahkan margin bottom untuk menjaga jarak dengan teks di atasnya */
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        height: 125vh; /* Ubah tinggi sesuai dengan kebutuhan */
+    }
+    #home .container {
+        height: 100%; /* Mengisi tinggi container agar bagian home penuh tinggi */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #home .col-md-6.text-white {
+        text-align: center; /* Memusatkan teks saat lebar layar mengecil */
+    } 
+}
+@media (max-width: 439px){
+    #home {
+        height: 140vh; /* Ubah tinggi sesuai dengan kebutuhan */
+    }
+}
+
+/* About */
+.about-section {
+    background-color: #252C41;
+    padding: 100px 0;
+    color: white;
+}
+
+.about-section .container {
+    max-width: 1300px; /* Atur lebar maksimal container */
+}
+
+.about-section h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.profile-img-container {
+    border: 5px solid #3c59ff;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.profile-img-container img {
+    width: 100%;
+    height: 250px;
+    max-width: 250px;
+    border-radius: 5px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-section{
+      height: 100vh;
+    }
+
+    .about-section .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-section .col-md-6 {
+        text-align: center;
+    }
+
+    .about-section .col-md-6.text-md-start {
+        text-align: center;
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .about-section .col-md-6.text-md-start {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 993px) {
+    .about-section .col-md-6.text-md-start {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 525px) {
+    .about-section{
+    height: 110vh;
+    }
+}
+@media (max-width: 380px) {
+    .about-section{
+    height: 110vh;
+    }
+}
+
+
+.text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Project */
+.project-section {
+    background-color: #021631;
+    padding: 130px 0;
+    color: white;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Add border-radius for rounded corners */
+    transition: transform 0.3s;
+    flex-basis: 33.33%; /* Kartu memenuhi sepertiga lebar container pada layar besar */
+}
+
+.project-card img {
+    width: 100%;
+    max-width: 100%; /* Set maximum width to 100% */
+    height: auto;
+    transition: transform 0.5s, filter 0.5s;
+    border-radius: 15px; /* Add border-radius to the image for rounded corners */
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+    filter: blur(4px);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 15px; /* Ensure the overlay also has rounded corners */
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-description {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.project-description p {
+    font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .project-card {
+        flex-basis: 50%; /* Setiap kartu akan memenuhi setengah lebar container */
+    }
+}
+
+/* Skill */
+.skill-section {
+    background-color: #252C41; /* Updated background color */
+    padding: 120px 0;
+    color: white;
+    height: 70vh;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: left;
+    padding-left: 15px; /* Add left padding for better spacing */
+}
+
+.skill-card {
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #021631;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skill-card {
+        margin-bottom: 20px;
+    }
+}
+.skill-card img[alt="PHP"] {
+    max-width: 150px; /* Ubah ukuran maksimum sesuai keinginan */
+}
+
+/* Contact */
+#contact {
+    background-color: #021631;
+    color: white;
+    padding: 60px 0;
+}
+
+#contact h2 {
+  margin-bottom: 40px;
+}
+
+#contact .form-group {
+  margin-bottom: 20px;
+}
+
+#contact .btn {
+  width: 100%;
+}
+
+#contact button {
+    background-color: #3c59ff;
+    color: white;
+    border: none;
+    padding: 15px 15px; /* Padding atas dan bawah 15px, padding kiri dan kanan 30px */
+    cursor: pointer;
+    font-size: 18px; /* Ukuran font 18px */
+    width: 40%; /* Tombol akan mengambil lebar 50% dari lebar kontainer */
+    margin: 0 auto; /* Mengatur margin atas dan bawah menjadi 0 dan margin kiri dan kanan menjadi otomatis (di tengah) */
+    display: block;
+    max-width: 150px; /* Mengubah tipe display menjadi block untuk membuat tombol mengambil lebar maksimum yang tersedia */
+  }
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: #999999; /* Warna placeholder abu-abu tua */
+  }
+
+#contact input[type="text"],
+#contact input[type="tel"],
+#contact input[type="email"],
+#contact input[type="text"],
+#contact textarea {
+    background-color: #252C41;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%; /* Lebar form menjadi 100% dari lebar kontainer */
+    border-radius: 5px; /* Border radius 5px */
+  }
+
+/* Footer */
+.footer {
+    background-color: #252C41;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style Transisi */
+
+/* Tambahkan class 'fade-in' pada elemen section home */
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+    opacity: 0;
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
